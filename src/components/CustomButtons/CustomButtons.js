@@ -3,11 +3,14 @@ import './CustomButtons.css';
 
 function CustomButtons({
   label,
-  handleSomething
+  handleSomething,
+  classNameBtn
 }) {
+  console.log(classNameBtn)
   return (
     <div>
-     <button onClick={handleSomething}>{label}</button>
+     <button onClick={handleSomething} className={classNameBtn}>{label}</button>
+     
     </div>
   );
 }

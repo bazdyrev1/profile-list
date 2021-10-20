@@ -5,19 +5,17 @@ function CustomTextArea({
   placeholder,
   someText,
   inputHandler,
-  
+  classNameArea,
 
 }) {
   return (
-    <div>
+    <div className={classNameArea} >
       <span>{someText} </span>
-      <textarea placeholder={placeholder} onChange={(e) => inputHandler(e)} >
-        
+      <textarea
+        placeholder={placeholder}
+        onChange={(e) => inputHandler(e)}
+         >
       </textarea>
-      
-      
-  
-      
     </div>
   );
 }

@@ -5,14 +5,16 @@ function CustomInput({
   placeholder,
   inputHandler,
   someText,
+  classNameInput,
   ...rest
 }) {
   return (
-    <div>
+    <div className={classNameInput}>
       <span>{someText} </span>
       <input 
         placeholder={placeholder} 
         onChange={(e) => inputHandler(e)}
+        
         {...rest}
       />
     </div>

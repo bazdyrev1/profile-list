@@ -37,22 +37,28 @@ function App() {
       {
         isOpen && (
           <div className='modal-edit-window'>
+            <div>
+              <span>Create Account</span>
+            </div>
             <CustomInput
               someText='Name'
               placeholder='Write your name'
               inputHandler={inputHandleName}
+              classNameInput='handleInput'
             />
 
             <CustomInput
               someText='Occupation'
               placeholder='Write your occupation'
               inputHandler={inputHandleOccupation}
+              classNameInput='handleInput'
             />
 
             <CustomTextArea
               someText='About'
               placeholder='Write something about you'
               inputHandler={inputHandleAbout}
+              classNameArea='handleArea'
             />
 
             <ImageDonwloadInput
@@ -72,7 +78,7 @@ function App() {
           profileInform={profileInform}
         />
 
-        <CustomButtons label='Change' handleSomething={handleOpenDialogWindow} />
+        <CustomButtons label='Change' classNameBtn="changeBtn"  handleSomething={handleOpenDialogWindow} />
       </div>
     </div>
   );

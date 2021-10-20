@@ -6,7 +6,9 @@ function InformationTable({
 }) {
   console.log('infomtable',profileInform)
   return (
+    
     <div className='user-information'>
+      
       <span className='hOneText'>
          {profileInform.userName} 
       </span>
